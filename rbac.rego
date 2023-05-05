@@ -30,9 +30,9 @@ allow {
 }
 
 # Allow bob to do anything
-#allow {
-#	input.user == "bob"
-#}
+allow {
+	input.user == "bob"
+}
 
 allow {
 	input.user == "alice"
