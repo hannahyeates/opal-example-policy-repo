@@ -30,9 +30,9 @@ allow {
 }
 
 # Allow bob to do anything
-allow {
-	input.user == "bob"
-}
+#allow {
+#	input.user == "bob"
+#}
 
 allow {
 	input.user == "alice"
@@ -59,7 +59,7 @@ allow {
 
 	# unless user location is outside US
 	country := data.users[input.user].location.country
-	country == "US"
+	country == "GB"
 }
 
 # user_is_admin is true if...
